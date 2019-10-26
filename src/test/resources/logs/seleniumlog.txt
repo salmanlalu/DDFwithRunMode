@@ -1,0 +1,158 @@
+19-10-18 07:40:07:336  INFO main base.testBase:62 - config file loaded
+19-10-18 07:40:07:343  INFO main base.testBase:76 - Object repository file loaded
+19-10-18 07:40:16:169  INFO main base.testBase:62 - config file loaded
+19-10-18 07:40:16:170  INFO main base.testBase:76 - Object repository file loaded
+19-10-18 07:40:22:609  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:22:687  INFO main base.testBase:29 - addCustomerTest is started
+19-10-18 07:40:23:084  INFO main base.testBase:153 - clilcking on: addcustomerbtn_CSS
+19-10-18 07:40:23:184  INFO main base.testBase:170 - Typing in: customerfirstName_XPATH entering the value of: Salman
+19-10-18 07:40:23:216  INFO main base.testBase:170 - Typing in: customerlastName_XPATH entering the value of: Sattar
+19-10-18 07:40:23:252  INFO main base.testBase:170 - Typing in: customerPostCode_XPATH entering the value of: A4454578
+19-10-18 07:40:23:297  INFO main base.testBase:153 - clilcking on: addcustomerbtnsmall_XPATH
+19-10-18 07:40:23:342  INFO main base.testBase:47 - addCustomerTest is passed like a charm
+19-10-18 07:40:23:761  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:23:837  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:23:867  INFO main base.testBase:29 - addCustomerTest is started
+19-10-18 07:40:23:892  INFO main base.testBase:153 - clilcking on: addcustomerbtn_CSS
+19-10-18 07:40:23:960  INFO main base.testBase:170 - Typing in: customerfirstName_XPATH entering the value of: lalu
+19-10-18 07:40:23:988  INFO main base.testBase:170 - Typing in: customerlastName_XPATH entering the value of: lattar
+19-10-18 07:40:24:024  INFO main base.testBase:170 - Typing in: customerPostCode_XPATH entering the value of: A5454545
+19-10-18 07:40:24:063  INFO main base.testBase:153 - clilcking on: addcustomerbtnsmall_XPATH
+19-10-18 07:40:24:099  INFO main base.testBase:47 - addCustomerTest is passed like a charm
+19-10-18 07:40:24:205  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:24:278  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:24:308  INFO main base.testBase:29 - addCustomerTest is started
+19-10-18 07:40:24:339  INFO main base.testBase:153 - clilcking on: addcustomerbtn_CSS
+19-10-18 07:40:24:399  INFO main base.testBase:170 - Typing in: customerfirstName_XPATH entering the value of: kalu
+19-10-18 07:40:24:425  INFO main base.testBase:170 - Typing in: customerlastName_XPATH entering the value of: kattar
+19-10-18 07:40:24:448  INFO main base.testBase:170 - Typing in: customerPostCode_XPATH entering the value of: B4545
+19-10-18 07:40:24:483  INFO main base.testBase:153 - clilcking on: addcustomerbtnsmall_XPATH
+19-10-18 07:40:24:515  INFO main base.testBase:50 - java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Customer added successfully with customer id :8"
+19-10-18 07:40:24:686  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:26:041  INFO main base.testBase:62 - config file loaded
+19-10-18 07:40:26:044  INFO main base.testBase:76 - Object repository file loaded
+19-10-18 07:40:33:187  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:33:532  INFO main base.testBase:153 - clilcking on: openaccount_XPATH
+19-10-18 07:40:33:836  INFO main base.testBase:32 - openAccountTest is started
+19-10-18 07:40:34:102  INFO main base.testBase:191 - Selecting in: userselect_XPATH entering value of: Harry Potter
+19-10-18 07:40:34:393  INFO main base.testBase:191 - Selecting in: currencyselect_XPATH entering value of: Pound
+19-10-18 07:40:34:460  INFO main base.testBase:153 - clilcking on: processbtn_XPATH
+19-10-18 07:40:34:502  INFO main base.testBase:46 - openAccountTest is passed like a charm
+19-10-18 07:40:34:613  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:34:693  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:34:774  INFO main base.testBase:153 - clilcking on: openaccount_XPATH
+19-10-18 07:40:34:818  INFO main base.testBase:32 - openAccountTest is started
+19-10-18 07:40:35:071  INFO main base.testBase:191 - Selecting in: userselect_XPATH entering value of: Ron Weasly
+19-10-18 07:40:35:335  INFO main base.testBase:191 - Selecting in: currencyselect_XPATH entering value of: Dollar
+19-10-18 07:40:35:405  INFO main base.testBase:153 - clilcking on: processbtn_XPATH
+19-10-18 07:40:35:428  INFO main base.testBase:46 - openAccountTest is passed like a charm
+19-10-18 07:40:35:523  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:35:835  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:35:935  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:36:010  INFO main base.testBase:153 - clilcking on: openaccount_XPATH
+19-10-18 07:40:36:052  INFO main base.testBase:32 - openAccountTest is started
+19-10-18 07:40:36:305  INFO main base.testBase:191 - Selecting in: userselect_XPATH entering value of: Hermoine Granger
+19-10-18 07:40:36:591  INFO main base.testBase:191 - Selecting in: currencyselect_XPATH entering value of: Pound
+19-10-18 07:40:36:663  INFO main base.testBase:153 - clilcking on: processbtn_XPATH
+19-10-18 07:40:36:702  INFO main base.testBase:46 - openAccountTest is passed like a charm
+19-10-18 07:40:36:780  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:36:849  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:36:917  INFO main base.testBase:153 - clilcking on: openaccount_XPATH
+19-10-18 07:40:36:958  INFO main base.testBase:32 - openAccountTest is started
+19-10-18 07:40:37:205  INFO main base.testBase:191 - Selecting in: userselect_XPATH entering value of: Neville Longbottom
+19-10-18 07:40:37:458  INFO main base.testBase:191 - Selecting in: currencyselect_XPATH entering value of: Dollar
+19-10-18 07:40:37:541  INFO main base.testBase:153 - clilcking on: processbtn_XPATH
+19-10-18 07:40:37:566  INFO main base.testBase:50 - java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Account created successfully with account Number :1019"
+19-10-18 07:40:37:693  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:38:949  INFO main base.testBase:62 - config file loaded
+19-10-18 07:40:38:950  INFO main base.testBase:76 - Object repository file loaded
+19-10-18 07:40:45:416  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:45:891  INFO main base.testBase:153 - clilcking on: customerBtn_XPATH
+19-10-18 07:40:45:995  INFO main base.testBase:170 - Typing in: customerselect_XPATH entering the value of: Harry
+19-10-18 07:40:46:306  INFO main base.testBase:153 - clilcking on: customerDeleteBtn_XPATH
+19-10-18 07:40:56:341  INFO main base.testBase:47 - DeleteCustomerTest passed like a charm
+19-10-18 07:40:56:478  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:40:56:563  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:40:56:612  INFO main base.testBase:153 - clilcking on: customerBtn_XPATH
+19-10-18 07:40:56:655  INFO main base.testBase:170 - Typing in: customerselect_XPATH entering the value of: Ron
+19-10-18 07:40:56:932  INFO main base.testBase:153 - clilcking on: customerDeleteBtn_XPATH
+19-10-18 07:41:06:957  INFO main base.testBase:47 - DeleteCustomerTest passed like a charm
+19-10-18 07:41:07:068  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:07:373  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:07:470  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:41:07:511  INFO main base.testBase:153 - clilcking on: customerBtn_XPATH
+19-10-18 07:41:07:545  INFO main base.testBase:170 - Typing in: customerselect_XPATH entering the value of: Neville
+19-10-18 07:41:07:806  INFO main base.testBase:153 - clilcking on: customerDeleteBtn_XPATH
+19-10-18 07:41:17:830  INFO main base.testBase:47 - DeleteCustomerTest passed like a charm
+19-10-18 07:41:17:919  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:17:981  INFO main base.testBase:153 - clilcking on: bmLoginBtn_XPATH
+19-10-18 07:41:18:021  INFO main base.testBase:153 - clilcking on: customerBtn_XPATH
+19-10-18 07:41:18:065  INFO main base.testBase:170 - Typing in: customerselect_XPATH entering the value of: Hermoine
+19-10-18 07:41:18:340  INFO main base.testBase:153 - clilcking on: customerDeleteBtn_XPATH
+19-10-18 07:41:28:369  INFO main base.testBase:47 - DeleteCustomerTest passed like a charm
+19-10-18 07:41:28:487  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:29:450  INFO main base.testBase:62 - config file loaded
+19-10-18 07:41:29:453  INFO main base.testBase:76 - Object repository file loaded
+19-10-18 07:41:35:346  INFO main base.testBase:153 - clilcking on: customerloginBtn_XPATH
+19-10-18 07:41:35:347  INFO main base.testBase:24 - CustomerloginTest Started
+19-10-18 07:41:35:701  INFO main base.testBase:191 - Selecting in: userselect_customer_XPATH entering value of: Harry Potter
+19-10-18 07:41:35:997  INFO main base.testBase:153 - clilcking on: customer_login_Btn_XPATH
+19-10-18 07:41:36:071  INFO main base.testBase:35 - CustomerloginTest is passed like a charm :)
+19-10-18 07:41:36:156  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:36:209  INFO main base.testBase:153 - clilcking on: customerloginBtn_XPATH
+19-10-18 07:41:36:209  INFO main base.testBase:24 - CustomerloginTest Started
+19-10-18 07:41:36:511  INFO main base.testBase:191 - Selecting in: userselect_customer_XPATH entering value of: Ron Weasly
+19-10-18 07:41:36:546  INFO main base.testBase:153 - clilcking on: customer_login_Btn_XPATH
+19-10-18 07:41:36:576  INFO main base.testBase:35 - CustomerloginTest is passed like a charm :)
+19-10-18 07:41:36:647  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:37:887  INFO main base.testBase:62 - config file loaded
+19-10-18 07:41:37:888  INFO main base.testBase:76 - Object repository file loaded
+19-10-18 07:41:44:262  INFO main base.testBase:153 - clilcking on: customerloginBtn_XPATH
+19-10-18 07:41:44:617  INFO main base.testBase:191 - Selecting in: userselect_customer_XPATH entering value of: Harry Potter
+19-10-18 07:41:44:881  INFO main base.testBase:153 - clilcking on: customer_login_Btn_XPATH
+19-10-18 07:41:45:195  INFO main base.testBase:153 - clilcking on: depositBtn_CSS
+19-10-18 07:41:45:485  INFO main base.testBase:170 - Typing in: depositinputBox_XPATH entering the value of: 1000.0
+19-10-18 07:41:45:710  INFO main base.testBase:153 - clilcking on: depositsubmitBtn_XPATH
+19-10-18 07:41:45:744  INFO main base.testBase:45 - Deposit Test is Passed Like A Charm
+19-10-18 07:41:45:824  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:46:124  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:46:233  INFO main base.testBase:153 - clilcking on: customerloginBtn_XPATH
+19-10-18 07:41:46:530  INFO main base.testBase:191 - Selecting in: userselect_customer_XPATH entering value of: Albus Dumbledore
+19-10-18 07:41:46:595  INFO main base.testBase:153 - clilcking on: customer_login_Btn_XPATH
+19-10-18 07:41:46:825  INFO main base.testBase:153 - clilcking on: depositBtn_CSS
+19-10-18 07:41:46:887  INFO main base.testBase:170 - Typing in: depositinputBox_XPATH entering the value of: 2000.0
+19-10-18 07:41:47:116  INFO main base.testBase:153 - clilcking on: depositsubmitBtn_XPATH
+19-10-18 07:41:47:154  INFO main base.testBase:48 - java.lang.AssertionError: 
+Expected: "QQQQQQQQ"
+     but: was "Deposit Successful"
+19-10-18 07:41:47:287  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:47:344  INFO main base.testBase:153 - clilcking on: customerloginBtn_XPATH
+19-10-18 07:41:47:626  INFO main base.testBase:191 - Selecting in: userselect_customer_XPATH entering value of: Hermoine Granger
+19-10-18 07:41:47:708  INFO main base.testBase:153 - clilcking on: customer_login_Btn_XPATH
+19-10-18 07:41:47:946  INFO main base.testBase:153 - clilcking on: depositBtn_CSS
+19-10-18 07:41:48:009  INFO main base.testBase:170 - Typing in: depositinputBox_XPATH entering the value of: 1200.0
+19-10-18 07:41:48:249  INFO main base.testBase:153 - clilcking on: depositsubmitBtn_XPATH
+19-10-18 07:41:48:281  INFO main base.testBase:45 - Deposit Test is Passed Like A Charm
+19-10-18 07:41:48:352  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:48:421  INFO main base.testBase:153 - clilcking on: customerloginBtn_XPATH
+19-10-18 07:41:48:737  INFO main base.testBase:191 - Selecting in: userselect_customer_XPATH entering value of: Neville Longbottom
+19-10-18 07:41:48:817  INFO main base.testBase:153 - clilcking on: customer_login_Btn_XPATH
+19-10-18 07:41:49:051  INFO main base.testBase:153 - clilcking on: depositBtn_CSS
+19-10-18 07:41:49:074  INFO main base.testBase:170 - Typing in: depositinputBox_XPATH entering the value of: 900.0
+19-10-18 07:41:49:301  INFO main base.testBase:153 - clilcking on: depositsubmitBtn_XPATH
+19-10-18 07:41:49:330  INFO main base.testBase:45 - Deposit Test is Passed Like A Charm
+19-10-18 07:41:49:414  INFO main base.testBase:153 - clilcking on: homebtn_CSS
+19-10-18 07:41:50:745  INFO main base.testBase:62 - config file loaded
+19-10-18 07:41:50:745  INFO main base.testBase:76 - Object repository file loaded
+19-10-18 07:41:56:728  INFO main base.testBase:153 - clilcking on: customerloginBtn_XPATH
+19-10-18 07:41:57:313  INFO main base.testBase:191 - Selecting in: userselect_customer_XPATH entering value of: Hermoine Granger
+19-10-18 07:41:57:589  INFO main base.testBase:153 - clilcking on: customer_login_Btn_XPATH
+19-10-18 07:41:57:922  INFO main base.testBase:153 - clilcking on: withdrawBtn_CSS
+19-10-18 07:41:58:082  INFO main base.testBase:170 - Typing in: withdrawinputBox_XPATH entering the value of: 1000.0
+19-10-18 07:41:58:312  INFO main base.testBase:153 - clilcking on: withdrawsubmitBtn_XPATH
+19-10-18 07:41:58:360  INFO main base.testBase:41 - WithDraw Test is Passed like a Charm
+19-10-18 07:41:58:436  INFO main base.testBase:153 - clilcking on: homebtn_CSS

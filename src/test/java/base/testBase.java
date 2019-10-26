@@ -1,0 +1,204 @@
+package base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import org.testng.annotations.*;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+import utilities.ExtentManager;
+
+public class testBase {
+
+	public static WebDriver driver;
+	public static Properties config = new Properties();
+	public static Properties OR = new Properties();
+	public static FileInputStream fis;
+	public static FileInputStream fis1;
+	public static WebDriverWait wait;
+	public ExtentReports report = ExtentManager.getInstance();
+	public static ExtentTest test;
+	public static String browser;
+	public static Logger log = Logger.getLogger(testBase.class.getName());
+
+	@BeforeTest
+	public void setUp() throws IOException {
+
+		BasicConfigurator.configure();
+
+		try {
+			fis = new FileInputStream(
+					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\config.properties");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			config.load(fis);
+			log.info("config file loaded");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+			log.debug("config file unable to load");
+		}
+		try {
+			fis1 = new FileInputStream(
+					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\OR.properties");
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			OR.load(fis1);
+			log.info("Object repository file loaded");
+		} catch (IOException e) {
+			e.printStackTrace();
+			log.debug("unable to load OR file");
+		}
+
+		if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+
+			browser = System.getenv("browser");
+		} else {
+			browser = config.getProperty("browser");
+		}
+
+		config.setProperty("browser", browser);
+
+		if (config.getProperty("browser").equals("chrome")) {
+
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
+
+			ChromeOptions option = new ChromeOptions();
+			Boolean headless = Boolean.valueOf((config.getProperty("headless_option")));
+			option.setHeadless(headless);
+
+			driver = new ChromeDriver(option);
+
+		}
+
+		else if (config.getProperty("browser").equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver",
+					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\geckodriver.exe");
+
+			FirefoxOptions option = new FirefoxOptions();
+			Boolean headless = Boolean.valueOf((config.getProperty("headless_option")));
+			option.setHeadless(headless);
+
+			driver = new FirefoxDriver(option);
+
+		}
+
+		driver.get(config.getProperty("testsiteurl"));
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit_wait")),
+				TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 10);
+
+	}
+
+	public boolean isPresentElement(By by) {
+
+		try {
+
+			driver.findElement(by);
+			return true;
+
+		} catch (NoSuchElementException e) {
+
+			return false;
+		}
+
+	}
+
+	public static void click(String locator) {
+
+		if (locator.endsWith("_XPATH")) {
+
+			driver.findElement(By.xpath(OR.getProperty(locator))).click();
+
+		} else if (locator.endsWith("_CSS")) {
+
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+			
+		} else if (locator.endsWith("_ID")) {
+
+			driver.findElement(By.id(OR.getProperty(locator))).click();
+		}
+
+		test.log(LogStatus.INFO, "clicking on: " + locator);
+		log.info("clilcking on: " + locator);
+	}
+
+	public static void type(String locator, String value) {
+
+		if (locator.endsWith("_XPATH")) {
+
+			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
+		} else if (locator.endsWith("_CSS")) {
+
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
+		} else if (locator.endsWith("_ID")) {
+
+			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
+		}
+
+		test.log(LogStatus.INFO, "Typing in: " + locator + " entering value of: " + value);
+		log.info("Typing in: " + locator + " entering the value of: " + value);
+	}
+
+	static WebElement dropdown;
+
+	public static void select(String locator, String value) {
+
+		if (locator.endsWith("_XPATH")) {
+			dropdown = driver.findElement(By.xpath(OR.getProperty(locator)));
+		} else if (locator.endsWith("_CSS")) {
+			dropdown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		} else if (locator.endsWith("_ID")) {
+			dropdown = driver.findElement(By.id(OR.getProperty(locator)));
+		}
+
+		Select select = new Select(dropdown);
+		select.selectByVisibleText(value);
+
+		test.log(LogStatus.INFO, "Selecting in: " + locator + " entering value of: " + value);
+		log.info("Selecting in: " + locator + " entering value of: " + value);
+	}
+
+	@AfterMethod
+	public void settingup() {
+
+		click("homebtn_CSS");
+	}
+
+	@AfterTest
+	public void tearDown() {
+
+		if (driver != null) {
+
+			driver.quit();
+
+		}
+
+	}
+}

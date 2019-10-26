@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="13" passed="11">
+  <reporter-output>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_23_EEST_2019.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_23_EEST_2019.jpg><img src=Fri_Oct_18_07_15_23_EEST_2019.jpg height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_35_EEST_2019.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_35_EEST_2019.jpg><img src=Fri_Oct_18_07_15_35_EEST_2019.jpg height=200 width=200></img></a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Data driven Framework" duration-ms="89701" started-at="2019-10-18T07:15:07 EEST" finished-at="2019-10-18T07:16:37 EEST">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="8456" started-at="2019-10-18T07:15:07 EEST" finished-at="2019-10-18T07:15:15 EEST">
+      <class name="bankManager.testcases.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:bankManager.testcases.LoginTest@258e2e41]" name="setUp" is-config="true" duration-ms="6519" started-at="2019-10-18T07:15:07 EEST" finished-at="2019-10-18T07:15:13 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bankManager.testcases.LoginTest@258e2e41]" name="tearDown" is-config="true" duration-ms="1100" started-at="2019-10-18T07:15:14 EEST" finished-at="2019-10-18T07:15:15 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bankManager.testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Add customer" duration-ms="9035" started-at="2019-10-18T07:15:15 EEST" finished-at="2019-10-18T07:15:24 EEST">
+      <class name="bankManager.testcases.AddCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="setUp" is-config="true" duration-ms="5116" started-at="2019-10-18T07:15:15 EEST" finished-at="2019-10-18T07:15:20 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="addCustomerTest" duration-ms="1258" started-at="2019-10-18T07:15:21 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:22 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PostCode=A4454578, RunMode=Y, FirstName=Salman, Alert=Customer added successfully, LastName=Sattar}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="settingup" is-config="true" duration-ms="35" started-at="2019-10-18T07:15:22 EEST" finished-at="2019-10-18T07:15:22 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="addCustomerTest" duration-ms="329" started-at="2019-10-18T07:15:22 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:23 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PostCode=A5454545, RunMode=Y, FirstName=lalu, Alert=Customer added successfully, LastName=lattar}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="settingup" is-config="true" duration-ms="32" started-at="2019-10-18T07:15:23 EEST" finished-at="2019-10-18T07:15:23 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="FAIL" signature="addCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="addCustomerTest" duration-ms="335" started-at="2019-10-18T07:15:23 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:23 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PostCode=B4545, RunMode=Y, FirstName=kalu, Alert=Aaaaaaaaaa, LastName=kattar}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Customer added successfully with customer id :8"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Customer added successfully with customer id :8"
+at org.testng.Assert.fail(Assert.java:85)
+at bankManager.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Customer added successfully with customer id :8"
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at bankManager.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:45)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_23_EEST_2019.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_23_EEST_2019.jpg><img src=Fri_Oct_18_07_15_23_EEST_2019.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="settingup" is-config="true" duration-ms="32" started-at="2019-10-18T07:15:23 EEST" finished-at="2019-10-18T07:15:23 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bankManager.testcases.AddCustomerTest@11dc3715]" name="tearDown" is-config="true" duration-ms="1266" started-at="2019-10-18T07:15:23 EEST" finished-at="2019-10-18T07:15:24 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bankManager.testcases.AddCustomerTest -->
+    </test> <!-- Add customer -->
+    <test name="Open Account" duration-ms="11973" started-at="2019-10-18T07:15:24 EEST" finished-at="2019-10-18T07:15:36 EEST">
+      <class name="bankManager.testcases.OpenAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="setUp" is-config="true" duration-ms="5131" started-at="2019-10-18T07:15:24 EEST" finished-at="2019-10-18T07:15:30 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openAccountTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="openAccountTest" duration-ms="1777" started-at="2019-10-18T07:15:30 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:31 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Currency=Pound, CustomerName=Harry Potter, RunMode=Y, Alert=Account created successfully}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="settingup" is-config="true" duration-ms="36" started-at="2019-10-18T07:15:31 EEST" finished-at="2019-10-18T07:15:31 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="openAccountTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="openAccountTest" duration-ms="797" started-at="2019-10-18T07:15:31 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:32 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Currency=Dollar, CustomerName=Ron Weasly, RunMode=Y, Alert=Account created successfully}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="settingup" is-config="true" duration-ms="32" started-at="2019-10-18T07:15:32 EEST" finished-at="2019-10-18T07:15:32 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="openAccountTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="openAccountTest" duration-ms="750" started-at="2019-10-18T07:15:32 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:33 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Currency=Rupee, CustomerName=Albus Dumbledore, RunMode=Y, Alert=Account created successfully}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="settingup" is-config="true" duration-ms="27" started-at="2019-10-18T07:15:33 EEST" finished-at="2019-10-18T07:15:33 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="openAccountTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="openAccountTest" duration-ms="893" started-at="2019-10-18T07:15:33 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:34 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Currency=Pound, CustomerName=Hermoine Granger, RunMode=Y, Alert=Account created successfully}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="settingup" is-config="true" duration-ms="25" started-at="2019-10-18T07:15:34 EEST" finished-at="2019-10-18T07:15:34 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="FAIL" signature="openAccountTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="openAccountTest" duration-ms="788" started-at="2019-10-18T07:15:34 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:35 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Currency=Dollar, CustomerName=Neville Longbottom, RunMode=Y, Alert=Aaaaaaaaaa}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Account created successfully with account Number :1020"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Account created successfully with account Number :1020"
+at org.testng.Assert.fail(Assert.java:85)
+at bankManager.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: 
+Expected: a string containing "Aaaaaaaaaa"
+     but: was "Account created successfully with account Number :1020"
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+at bankManager.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:44)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_35_EEST_2019.jpg>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=Fri_Oct_18_07_15_35_EEST_2019.jpg><img src=Fri_Oct_18_07_15_35_EEST_2019.jpg height=200 width=200></img></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openAccountTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="settingup" is-config="true" duration-ms="44" started-at="2019-10-18T07:15:35 EEST" finished-at="2019-10-18T07:15:35 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bankManager.testcases.OpenAccountTest@4387b79e]" name="tearDown" is-config="true" duration-ms="1280" started-at="2019-10-18T07:15:35 EEST" finished-at="2019-10-18T07:15:36 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bankManager.testcases.OpenAccountTest -->
+    </test> <!-- Open Account -->
+    <test name="Delete Account" duration-ms="59977" started-at="2019-10-18T07:15:37 EEST" finished-at="2019-10-18T07:16:37 EEST">
+      <class name="bankManager.testcases.DeleteCustomerTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="setUp" is-config="true" duration-ms="5099" started-at="2019-10-18T07:15:37 EEST" finished-at="2019-10-18T07:15:42 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="deleteCustomerTest" duration-ms="11523" started-at="2019-10-18T07:15:42 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:15:53 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CustomerName=Harry, RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="settingup" is-config="true" duration-ms="46" started-at="2019-10-18T07:15:53 EEST" finished-at="2019-10-18T07:15:53 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="deleteCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="deleteCustomerTest" duration-ms="10514" started-at="2019-10-18T07:15:53 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:16:04 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CustomerName=Ron, RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="settingup" is-config="true" duration-ms="48" started-at="2019-10-18T07:16:04 EEST" finished-at="2019-10-18T07:16:04 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="deleteCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="deleteCustomerTest" duration-ms="10447" started-at="2019-10-18T07:16:04 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:16:14 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CustomerName=Albus, RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="settingup" is-config="true" duration-ms="40" started-at="2019-10-18T07:16:14 EEST" finished-at="2019-10-18T07:16:14 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="deleteCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="deleteCustomerTest" duration-ms="10453" started-at="2019-10-18T07:16:14 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:16:25 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CustomerName=Neville, RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="settingup" is-config="true" duration-ms="27" started-at="2019-10-18T07:16:25 EEST" finished-at="2019-10-18T07:16:25 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="deleteCustomerTest(java.util.Hashtable)[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="deleteCustomerTest" duration-ms="10472" started-at="2019-10-18T07:16:25 EEST" data-provider="bankManagerDP" finished-at="2019-10-18T07:16:36 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{CustomerName=Hermoine, RunMode=Y}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCustomerTest -->
+        <test-method status="PASS" signature="settingup()[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="settingup" is-config="true" duration-ms="24" started-at="2019-10-18T07:16:36 EEST" finished-at="2019-10-18T07:16:36 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- settingup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bankManager.testcases.DeleteCustomerTest@2aa3cd93]" name="tearDown" is-config="true" duration-ms="915" started-at="2019-10-18T07:16:36 EEST" finished-at="2019-10-18T07:16:37 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bankManager.testcases.DeleteCustomerTest -->
+    </test> <!-- Delete Account -->
+  </suite> <!-- Data driven Framework -->
+</testng-results>
