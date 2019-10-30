@@ -19,7 +19,7 @@ public class DepositTest extends testBase {
 	@Test(dataProvider = "customerDP", dataProviderClass = DataProviders.class)
 	public static void depositTest(Hashtable<String, String> data) throws AssertionError {
 
-		DataUtil.checkExecutionSuite2("CustomerSuite", "DepositTest", data.get("RunMode"));
+		DataUtil.checkExecutionSuite("CustomerSuite", "DepositTest", data.get("RunMode"));
 
 		try {
 

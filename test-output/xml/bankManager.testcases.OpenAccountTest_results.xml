@@ -3,20 +3,20 @@
            tests="5"
            failures="1"
            errors="0"
-           skipped="0"
-           time="5,005">
+           skipped="1"
+           time="4,455">
   <properties />
-            <testcase name="openAccountTest" time="0,788" classname="bankManager.testcases.OpenAccountTest">
+            <testcase name="openAccountTest" time="0,852" classname="bankManager.testcases.OpenAccountTest">
                 <failure type="java.lang.AssertionError"
                   message="java.lang.AssertionError: 
 Expected: a string containing &quot;Aaaaaaaaaa&quot;
-     but: was &quot;Account created successfully with account Number :1020&quot;"
+     but: was &quot;Account created successfully with account Number :1019&quot;"
               >
 <![CDATA[java.lang.AssertionError: java.lang.AssertionError: 
 Expected: a string containing "Aaaaaaaaaa"
-     but: was "Account created successfully with account Number :1020"
+     but: was "Account created successfully with account Number :1019"
   org.testng.Assert.fail(Assert.java:85)
-  bankManager.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:51)
+  bankManager.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:50)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,10 +47,10 @@ Expected: a string containing "Aaaaaaaaaa"
   org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.lang.AssertionError: 
 Expected: a string containing "Aaaaaaaaaa"
-     but: was "Account created successfully with account Number :1020"
+     but: was "Account created successfully with account Number :1019"
   org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
   org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-  bankManager.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:44)
+  bankManager.testcases.OpenAccountTest.openAccountTest(OpenAccountTest.java:43)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -84,10 +84,12 @@ Expected: a string containing "Aaaaaaaaaa"
 
           </testcase>
   
+            <testcase name="openAccountTest" time="0.0" classname="bankManager.testcases.OpenAccountTest">
+          <skipped />
+    </testcase>
   
-            <testcase name="openAccountTest" time="0,750" classname="bankManager.testcases.OpenAccountTest" />
-                <testcase name="openAccountTest" time="1,777" classname="bankManager.testcases.OpenAccountTest" />
-                <testcase name="openAccountTest" time="0,797" classname="bankManager.testcases.OpenAccountTest" />
-                <testcase name="openAccountTest" time="0,893" classname="bankManager.testcases.OpenAccountTest" />
+            <testcase name="openAccountTest" time="1,859" classname="bankManager.testcases.OpenAccountTest" />
+                <testcase name="openAccountTest" time="0,839" classname="bankManager.testcases.OpenAccountTest" />
+                <testcase name="openAccountTest" time="0,869" classname="bankManager.testcases.OpenAccountTest" />
       
 </testsuite>

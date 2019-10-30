@@ -18,7 +18,7 @@ public class AddCustomerTest extends testBase {
 	@Test(dataProvider = "bankManagerDP", dataProviderClass = DataProviders.class)
 	public static void addCustomerTest(Hashtable<String, String> data) {
 
-		DataUtil.checkExecutionSuite1("BankManagerSuite", "AddCustomerTest", data.get("RunMode"));
+		DataUtil.checkExecutionSuite("BankManagerSuite", "AddCustomerTest", data.get("RunMode"));
 						
 		try {
 		click("bmLoginBtn_XPATH");

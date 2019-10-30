@@ -21,7 +21,7 @@ public class OpenAccountTest extends testBase {
 	@Test(dataProvider = "bankManagerDP", dataProviderClass = DataProviders.class)
 	public static void openAccountTest(Hashtable<String, String> data) throws AssertionError {
 
-		DataUtil.checkExecutionSuite1("BankManagerSuite", "OpenAccountTest", data.get("RunMode"));
+		DataUtil.checkExecutionSuite("BankManagerSuite", "OpenAccountTest", data.get("RunMode"));
 
 		try {
 			click("bmLoginBtn_XPATH");

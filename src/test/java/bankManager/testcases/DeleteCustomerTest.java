@@ -18,7 +18,7 @@ public class DeleteCustomerTest extends testBase {
 	@Test(dataProvider = "bankManagerDP", dataProviderClass = DataProviders.class)
 	public static void deleteCustomerTest(Hashtable<String, String> data) throws AssertionError {
 
-		DataUtil.checkExecutionSuite1("BankManagerSuite", "DeleteCustomerTest", data.get("RunMode"));
+		DataUtil.checkExecutionSuite("BankManagerSuite", "DeleteCustomerTest", data.get("RunMode"));
 
 		try {
 

@@ -10,8 +10,8 @@ import utilities.DataUtil;
 
 public class DataProviders {
 
-	
-	@DataProvider(name="bankManagerDP", parallel = false)
+		
+	@DataProvider(name="bankManagerDP")
 	public Object [][] getDataforBanlManagerSuite(Method m){
 		
 		String testcase = m.getName();

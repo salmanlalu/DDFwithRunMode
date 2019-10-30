@@ -2,16 +2,20 @@ package utilities;
 
 public class Constants {
 
-	//Constants for Suite
+	    //Constants for Suite
 		public static String SUITE_SHEET = "Suite";
+		public static String BANKMANGER_SUITENAME = "BankManagerSuite";
+		public static String CUSTOMER_SUITENAME = "CustomerSuite";
 		public static int SUITENAME_COLS = 0;
 		public static int RUNMODES_COLS = 1;
+
 		
 		//Constants for Testcases
 		public static String TestCase_SHEET = "TestCases";
+		public static String DATA_SHEET = "TestData";
 		public static int TESTCASENAME_COLS = 0;
 		public static int RUNMODES_TestCase_COLS = 1;
-		public static String DATA_SHEET = "TestData";
+
 		
 		//General Runmodes constants
 		public static String RUNMODES_YES = "Y";

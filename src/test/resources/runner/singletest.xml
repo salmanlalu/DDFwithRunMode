@@ -10,7 +10,7 @@
  
 	<test name="Test">
 		<classes>
-			<class name="bankManager.testcases.OpenAccountTest" />
+			<class name="bankManager.testcases.AddCustomerTest" />
 		</classes>
 	</test>
 	

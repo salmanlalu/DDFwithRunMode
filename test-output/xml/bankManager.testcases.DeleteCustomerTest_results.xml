@@ -3,15 +3,17 @@
            tests="5"
            failures="0"
            errors="0"
-           skipped="0"
-           time="53,409">
+           skipped="1"
+           time="43,170">
   <properties />
   
+            <testcase name="deleteCustomerTest" time="0.0" classname="bankManager.testcases.DeleteCustomerTest">
+          <skipped />
+    </testcase>
   
-            <testcase name="deleteCustomerTest" time="10,514" classname="bankManager.testcases.DeleteCustomerTest" />
-                <testcase name="deleteCustomerTest" time="11,523" classname="bankManager.testcases.DeleteCustomerTest" />
-                <testcase name="deleteCustomerTest" time="10,453" classname="bankManager.testcases.DeleteCustomerTest" />
-                <testcase name="deleteCustomerTest" time="10,447" classname="bankManager.testcases.DeleteCustomerTest" />
-                <testcase name="deleteCustomerTest" time="10,472" classname="bankManager.testcases.DeleteCustomerTest" />
+            <testcase name="deleteCustomerTest" time="11,701" classname="bankManager.testcases.DeleteCustomerTest" />
+                <testcase name="deleteCustomerTest" time="10,488" classname="bankManager.testcases.DeleteCustomerTest" />
+                <testcase name="deleteCustomerTest" time="10,478" classname="bankManager.testcases.DeleteCustomerTest" />
+                <testcase name="deleteCustomerTest" time="10,473" classname="bankManager.testcases.DeleteCustomerTest" />
       
 </testsuite>

@@ -16,7 +16,7 @@ public class CustomerLoginTest extends testBase {
 	@Test(dataProvider = "customerDP", dataProviderClass = DataProviders.class)
 	public void customerLoginTest(Hashtable<String, String> data) {
 
-		DataUtil.checkExecutionSuite2("CustomerSuite", "CustomerLoginTest", data.get("RunMode"));
+		DataUtil.checkExecutionSuite("CustomerSuite", "CustomerLoginTest", data.get("RunMode"));
 
 		try {
 			click("customerloginBtn_XPATH");

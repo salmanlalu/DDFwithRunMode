@@ -3,14 +3,16 @@
            tests="2"
            failures="0"
            errors="0"
-           skipped="1"
-           time="1,309">
+           skipped="2"
+           time="0,061">
   <properties />
   
             <testcase name="customerLoginTest" time="0.0" classname="customer.testcases.CustomerLoginTest">
           <skipped />
     </testcase>
+            <testcase name="customerLoginTest" time="0.0" classname="customer.testcases.CustomerLoginTest">
+          <skipped />
+    </testcase>
   
-            <testcase name="customerLoginTest" time="1,267" classname="customer.testcases.CustomerLoginTest" />
-      
+  
 </testsuite>

@@ -10,11 +10,36 @@
     <classes>
       <class name="customer.testcases.CustomerLoginTest">
         <methods>
-          <include name="customerLoginTest" invocation-numbers="0"/>
+          <include name="customerLoginTest" invocation-numbers="0 1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="settingup"/>
         </methods>
       </class> <!-- customer.testcases.CustomerLoginTest -->
     </classes>
   </test> <!-- Customer Login Test(failed) -->
+  <test thread-count="5" name="Customer Deposit Test(failed)">
+    <classes>
+      <class name="customer.testcases.DepositTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="depositTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="setUp"/>
+          <include name="settingup"/>
+        </methods>
+      </class> <!-- customer.testcases.DepositTest -->
+    </classes>
+  </test> <!-- Customer Deposit Test(failed) -->
+  <test thread-count="5" name="Customer WithDraw Test(failed)">
+    <classes>
+      <class name="customer.testcases.WithDrawTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="withDrawTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="settingup"/>
+        </methods>
+      </class> <!-- customer.testcases.WithDrawTest -->
+    </classes>
+  </test> <!-- Customer WithDraw Test(failed) -->
 </suite> <!-- Failed suite [Data driven Framework (0)] -->

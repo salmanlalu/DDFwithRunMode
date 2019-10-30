@@ -19,7 +19,7 @@ public class WithDrawTest extends testBase {
 	@Test(dataProvider = "customerDP", dataProviderClass = DataProviders.class)
 	public static void withDrawTest(Hashtable<String, String> data) throws AssertionError {
 
-		DataUtil.checkExecutionSuite2("CustomerSuite", "WithDrawTest", data.get("RunMode"));
+		DataUtil.checkExecutionSuite("CustomerSuite", "WithDrawTest", data.get("RunMode"));
 
 		try {
 

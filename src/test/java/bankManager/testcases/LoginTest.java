@@ -18,7 +18,7 @@ public class LoginTest extends testBase {
 	@Test(dataProvider = "bankManagerDP", dataProviderClass = DataProviders.class)
 	public void loginAsBankManager(Hashtable <String, String> data) throws InterruptedException {
 
-		DataUtil.checkExecutionSuite1("BankManagerSuite", "LoginTest", data.get("RunMode"));
+		DataUtil.checkExecutionSuite("BankManagerSuite", "LoginTest", data.get("RunMode"));
 		
 		click("bmLoginBtn_XPATH");
 		log.info("loginTest Started");
