@@ -1,7 +1,7 @@
 package bankManager.testcases;
 
 import base.testBase;
-import utilities.Constants;
+
 import utilities.DataProviders;
 import utilities.DataUtil;
 
@@ -22,11 +22,7 @@ public class AddCustomerTest extends testBase  {
 	@Test(dataProvider = "bankManagerDP", dataProviderClass = DataProviders.class)
 	public static void addCustomerTest(Hashtable<String, String> data) throws AssertionError {
 		
-		//testCaseNamereturn().getClass();
-		
-		//String testCaseName = returnTestCaseName();
 		DataUtil.checkExecutionSuite("BankManagerSuite", "AddCustomerTest", data.get("RunMode"));
-		//DataUtil.checkExecutionSuite(Constants.BANKMANGER_SUITENAME,, data.get("RunMode"));
 
 		try {
 			click("bmLoginBtn_XPATH");
