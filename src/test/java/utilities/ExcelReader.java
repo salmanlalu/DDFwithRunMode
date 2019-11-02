@@ -26,7 +26,8 @@ public class ExcelReader {
 			e.printStackTrace();
 		}
 	}
-
+	
+	//counting the row number
 	public int getRowCount(String sheetName) {
 
 		int index = workbook.getSheetIndex(sheetName);
@@ -44,6 +45,7 @@ public class ExcelReader {
 		return rowCount;
 	}
 
+	//counting the column number
 	public int getColCount(String sheetName) {
 
 		int index = workbook.getSheetIndex(sheetName);
@@ -61,6 +63,7 @@ public class ExcelReader {
 		return colCount;
 	}
 
+	//reading data from a cell that is determined by the row number and column number
 	public String getCelldata(String sheetName, int rowNum, int colNum) {
 
 		int index = workbook.getSheetIndex(sheetName);

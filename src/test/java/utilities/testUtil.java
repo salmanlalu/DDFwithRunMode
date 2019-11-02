@@ -13,6 +13,7 @@ public class testUtil extends testBase {
 	public static String screenShotPath;
 	public static String screenShotName;
 
+	//method for capturing screenshots and save and renaming
 	public static void captureScreenshot() throws IOException {
 
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

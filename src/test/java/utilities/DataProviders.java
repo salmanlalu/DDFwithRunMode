@@ -10,7 +10,7 @@ import utilities.DataUtil;
 
 public class DataProviders {
 
-		
+	//dataprovider for bank manager suite and its testcases	
 	@DataProvider(name="bankManagerDP")
 	public Object [][] getDataforBanlManagerSuite(Method m){
 		
@@ -20,6 +20,7 @@ public class DataProviders {
 		return DataUtil.getData(testcase, excel);
 	}
 	
+	//dataprovider for customer suite and testcases
 	@DataProvider(name="customerDP")
 	public Object [][] getDataforCustomerSuite(Method m){
 		

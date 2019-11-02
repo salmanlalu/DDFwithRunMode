@@ -9,6 +9,7 @@ import utilities.Constants;
 
 public class DataUtil {
 
+	//method for checking the rumnodes for test suites and return true/false value
 	public static boolean isSuiteRunnable(String suiteName) {
 
 		ExcelReader excel = new ExcelReader(Constants.SUITE_XCEL_PATH);
@@ -32,6 +33,7 @@ public class DataUtil {
 		return false;
 	}
 
+	//method for checking the rumnodes for test cases and return true/false value
 	public static boolean isTestRunnableSuite(String testCaseName, String suiteName) {
 
 		ExcelReader excel = null;
@@ -64,6 +66,7 @@ public class DataUtil {
 		return false;
 	}
 
+	//method for checking the testsuites, testcases and testdata is runnable according to their rumnodes.....throw skip exception if false
 	public static void checkExecutionSuite(String SuiteName, String TestCaseName, String dataRunmodes) {
 
 		boolean suiterun = isSuiteRunnable(SuiteName);
@@ -84,6 +87,7 @@ public class DataUtil {
 
 	}
 
+	//reading testcase name, determine the row number for the particular testcase's testdatas, read data from perticuler cell and return back to the hashtable 
 	public static Object[][] getData(String testCase, ExcelReader excel) {
 
 		int rows = excel.getRowCount(Constants.DATA_SHEET);
@@ -139,6 +143,7 @@ public class DataUtil {
 				String testData = excel.getCelldata(Constants.DATA_SHEET, rNum, cNum);
 				String colName = excel.getCelldata(Constants.DATA_SHEET, dataStartCol, cNum);
 
+				//Storing data as key,value pairs into the hashtable 
 				table.put(colName, testData);
 			}
 

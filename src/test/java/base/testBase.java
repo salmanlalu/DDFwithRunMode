@@ -3,7 +3,6 @@ package base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.invoke.MethodHandles;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -44,14 +43,18 @@ public class testBase {
 	@BeforeTest
 	public void setUp() throws IOException {
 
+		//for log4j configuration
 		BasicConfigurator.configure();
-
+		
+		//open the config.propoerties file
 		try {
 			fis = new FileInputStream(
 					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\config.properties");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		
+		//loading config.propoerties file
 		try {
 			config.load(fis);
 			log.info("config file loaded");
@@ -60,12 +63,16 @@ public class testBase {
 			e.printStackTrace();
 			log.debug("config file unable to load");
 		}
+		
+		//open Object repository properties file
 		try {
 			fis1 = new FileInputStream(
 					System.getProperty("user.dir") + "\\src\\test\\resources\\properties\\OR.properties");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		
+		//load the OR.properties file
 		try {
 			OR.load(fis1);
 			log.info("Object repository file loaded");
@@ -73,7 +80,8 @@ public class testBase {
 			e.printStackTrace();
 			log.debug("unable to load OR file");
 		}
-
+		
+		//for jenkins configuration (setting the parameter for browser)
 		if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
 
 			browser = System.getenv("browser");
@@ -83,11 +91,13 @@ public class testBase {
 
 		config.setProperty("browser", browser);
 
+		//setting the webdrivers according to the config properties file
 		if (config.getProperty("browser").equals("chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "\\src\\test\\resources\\executables\\chromedriver.exe");
 
+			//setting up the headless options according to the config properties file
 			ChromeOptions option = new ChromeOptions();
 			Boolean headless = Boolean.valueOf((config.getProperty("headless_option")));
 			option.setHeadless(headless);
@@ -116,6 +126,7 @@ public class testBase {
 
 	}
 
+	//Custom method for determining a webelement presence 
 	public boolean isPresentElement(By by) {
 
 		try {
@@ -129,7 +140,8 @@ public class testBase {
 		}
 
 	}
-
+	
+	//Custom method for clicking on an web element
 	public static void click(String locator) {
 
 		if (locator.endsWith("_XPATH")) {
@@ -149,6 +161,7 @@ public class testBase {
 		log.info("clilcking on: " + locator);
 	}
 
+	//Custom method for inputting string into the text box
 	public static void type(String locator, String value) {
 
 		if (locator.endsWith("_XPATH")) {
@@ -168,6 +181,7 @@ public class testBase {
 
 	static WebElement dropdown;
 
+	//Custom method for selecting options from the drop down menu
 	public static void select(String locator, String value) {
 
 		if (locator.endsWith("_XPATH")) {
@@ -191,8 +205,6 @@ public class testBase {
 		click("homebtn_CSS");
 	}
 	
-
-
 	@AfterTest
 	public void tearDown() {
 

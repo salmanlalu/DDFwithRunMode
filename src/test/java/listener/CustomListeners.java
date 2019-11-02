@@ -31,7 +31,8 @@ public class CustomListeners extends testBase implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult arg0) {
-
+		
+		//capture screenshots
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
 		try {
 			testUtil.captureScreenshot();
@@ -42,13 +43,15 @@ public class CustomListeners extends testBase implements ITestListener {
 
 		test.log(LogStatus.FAIL, arg0.getName().toUpperCase() + " Failed with exception: " +arg0.getThrowable());
 		test.log(LogStatus.FAIL, test.addScreenCapture(testUtil.screenShotName));
-
+		
+		//for reportng reporting
 		Reporter.log("<a target=\"_blank\" href=" + testUtil.screenShotName + ">Screenshot</a>");
 		Reporter.log("<br>");
 		Reporter.log("<br>");
 		Reporter.log("<a target=\"_blank\" href=" + testUtil.screenShotName + "><img src=" + testUtil.screenShotName
 				+ " height=200 width=200></img></a>");
 
+		//Must do things for extent report
 		report.endTest(test);
 		report.flush();
 
